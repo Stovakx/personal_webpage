@@ -1,0 +1,8 @@
+form{
+    jméno: firstName
+    Příjmení: lastName
+    e-mail: email
+    telephone: telephone
+    message: message
+        
+}
