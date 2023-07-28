@@ -4,6 +4,10 @@
 header{
     background-color: rgb(36, 31, 31);
 }
+.show{
+    position: relative;
+    z-index: 988;
+}
 .navbarLogo{
     width: 200px;
 }
@@ -90,24 +94,27 @@ header{
 }
 
 .stackimg{
-    background-color: white;
-    border-radius: 40%;
     width: 20rem;
     height: auto;
     max-height: 15rem;
 }
 .github{
     background-color: gray;
-    background-size:200px, 500px;
-    border-radius: 35px;
+    border-radius: 50%;
 }
 
+.projectHeadings >a{
+    text-decoration: underline solid black 2px;
+    color: black;
+    
+}
 
 .projectimg{
     width: 100%;
     height: auto;
 }
 .herokuimg{
+    background-color: white;
     border-radius: 0;
     height: 75%;
     width: auto;
