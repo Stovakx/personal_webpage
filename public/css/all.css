@@ -1,13 +1,10 @@
-*{
+html{
     scroll-behavior: smooth;
 }
 header{
     background-color: rgb(36, 31, 31);
 }
-.show{
-    position: relative;
-    z-index: 988;
-}
+
 .navbarLogo{
     width: 200px;
 }
@@ -25,9 +22,10 @@ header{
     width: 30px;
     height: 30px;
 }
-.nav-link,.nav-link:active, .nav-link:visited{
+.nav-link,.nav-link:any-link, .nav-link:hover{
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 .contactBtn{
     color: white;
@@ -94,9 +92,9 @@ header{
 }
 
 .stackimg{
-    width: 20rem;
+    width: 12rem;
     height: auto;
-    max-height: 15rem;
+
 }
 .github{
     background-color: gray;
@@ -116,17 +114,16 @@ header{
 .herokuimg{
     background-color: white;
     border-radius: 0;
-    height: 75%;
-    width: auto;
-    max-width: 45%;
-    aspect-ratio: 3/ 1;
+    height: 100%;
+    aspect-ratio: 5/2;
 }
 .formDiv{
     width: 85%;
     max-width: 950px;
-    background-color: #f2f2f2;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 21px;
+    background: linear-gradient(145deg, #dadada, #f2f2f2);
+
 }
 textarea{
     height: 140px;
@@ -146,10 +143,10 @@ textarea{
     background-color: #ff6384;
 }
 .gdprBtnForm{
+    color: white;
     border: none;
     padding-left: 3px;
     text-decoration: underline 1px black solid;
-    align-self:self-end;
 }
 .btn_form_submit{
     background-color: #ff6384;
@@ -168,4 +165,39 @@ textarea{
 
 .email{
     color: red;
+}
+
+footer{
+    background-color: rgb(36, 31, 31);
+    color: white;
+}
+.socSitesDiv{
+    width: 130px;
+}
+.socSitesA:any-link, .socSitesA:hover{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 20px;
+
+}
+
+#scrollToTopBtn.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
