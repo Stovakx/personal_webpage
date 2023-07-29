@@ -6,22 +6,20 @@ document.addEventListener("DOMContentLoaded", function () {
         if (navbarTogglerIcon.classList.contains("bi-list")) {
             navbarTogglerIcon.classList.remove("bi-list");
             navbarTogglerIcon.classList.add("bi-x");
-            collapse.classList.add('show')
+            collapse.classList.add('show');
         } else {
-
             navbarTogglerIcon.classList.remove("bi-x");
             navbarTogglerIcon.classList.add("bi-list");
-            collapse.classList.remove('show')
+            collapse.classList.remove('show');
         }
-
     });
 
-    //year calculating
+    // year calculating
     const yearElement = document.querySelector('.year');
     const currentYear = new Date().getFullYear();
     yearElement.textContent = currentYear;
 
-    //scroll up button
+    // scroll up button
     // schování/ukázání podle pozice
     function toggleScrollToTopButton() {
         const scrollToTopBtn = document.getElementById('scrollToTopBtn');
@@ -53,35 +51,32 @@ document.addEventListener("DOMContentLoaded", function () {
         checkScrollDirection();
     };
 
-    document.querySelector('.btn_form_submit').addEventListener('submit', (e) => {
-        e.preventDefault();
-    });
-    // variable form for nodemailer in server
-    const form = document.getElementById('contactForm')
+    // Form submit functionality
+    const form = document.getElementById('contactForm');
     form.addEventListener("submit", (e) => {
-      e.preventDefault();
-    
-      const formData = new FormData(form);
-    
-      fetch("/sendmail", {
-        method: "POST",
-        body: formData,
-      })
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        fetch("/sendmail", {
+            method: "POST",
+            body: formData,
+            
+        })
         .then((response) => {
-          if (!response.ok) {
-            throw new Error("Network response was not ok");
-          }
-          return response.json();
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
         })
         .then((data) => {
-          console.log(data);
-          alert(data.message);
+            console.log(data);
+            alert(data.message);
         })
         .catch((error) => {
-          console.error("Error:", error);
-          alert("There was a problem sending your message. Please try again later.");
+            console.error("Error:", error);
+            alert("There was a problem sending your message. Please try again later.");
         });
+        console.log(formData);
     });
-    
-
 });
