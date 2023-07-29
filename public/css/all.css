@@ -129,6 +129,9 @@ header{
     border: 2px solid transparent;
 }
 
+label{
+    color: white;
+}
 textarea{
     height: 140px;
 }
