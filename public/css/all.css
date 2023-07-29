@@ -43,7 +43,7 @@ header{
     max-height: 70%; 
 }
 .name, .devSpan{
-    color: #289272;
+    color: #1BFD9C;
 }
 .downloadCV{
     width: 230px;
@@ -114,17 +114,21 @@ header{
 .herokuimg{
     background-color: white;
     border-radius: 0;
-    height: 100%;
-    aspect-ratio: 5/2;
+    height: 12rem;
+    width: 20rem;
+    border-radius: 10px;
 }
 .formDiv{
     width: 85%;
     max-width: 950px;
     padding: 20px;
     border-radius: 21px;
-    background: linear-gradient(145deg, #dadada, #f2f2f2);
-
+    background: #606c88;
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
+    background: linear-gradient(to right, #3f4c6b, #606c88);
+    border: 2px solid transparent;
 }
+
 textarea{
     height: 140px;
 }
@@ -200,4 +204,102 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (max-width:426px) {
+    .contactBtn{
+        width: 130px;
+    }
+    .downloadCV{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 85%;
+    }
+
+    .stackimg{
+        width: 7rem;
+        height: 7rem;
+    }
+    
+    .herokuimg{
+        height: 7rem;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width:427px) and (max-width: 576px){
+
+    .contactBtn{
+        width: 130px;
+    }
+
+    .downloadCV{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        width: 85%;
+    }
+
+    .stackimg{
+        width: 7rem;
+        height: 7rem;
+    }
+    
+    .herokuimg{
+        height: 7rem;
+        width: auto;
+    }
+}
+@media only screen and (min-width:577px) and (max-width: 766px){
+    .contactBtn{
+        width: 130px;
+    }
+    .cvCol{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .herokuimg{
+        height: 12rem;
+        width: 17rem;
+    }
+}
+
+@media only screen and (min-width:767px) and (max-width: 991px){
+    .herokuimg{
+        height: 12rem;
+        width: 17rem;
+    }
+}
+@media only screen and (min-width:1200px){
+    h1{
+        font-size: 3rem;
+    }
+    h2{
+        font-size: 2.75rem
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+
+    h4{
+        font-size: 2.25rem;
+    }
+    h5{
+        font-size: 2rem;
+    }
+    p{
+        font-size:larger;
+    }
+    .stackimg{
+        height: 20rem;
+        width: 20rem;
+    }
+    .herokuimg{
+        width: 28rem;
+        border-radius: 1.5rem;
+    }
 }
