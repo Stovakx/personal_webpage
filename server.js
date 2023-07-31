@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
   try {
     // Read the 'index.html' file synchronously
-    const data = fs.readFileSync('./views/index.html', 'utf8');
+    const data = fs.readFileSync('./index.html', 'utf8');
     // Send the 'index.html' content as the response
     res.send(data);
   } catch (error) {
