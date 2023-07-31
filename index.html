@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robin Palatas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- for some reason bootstrap collapse doesn't work atm.. Need to closer look on it -->
+                <a class="navbar-brand" href="/"><img class="navbarLogo" src="./logos/yellow.svg" alt=""></a>
+                <button class="navbar-toggler navbarButton" type="button" data-toggle="collapse" data-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bi bi-list navbar-dark" id="navbarIcon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <div class="navbar-nav">
+                        <a class="nav-link mx-auto" aria-current="page" href="#"><p class="text-center mb-0">Home</p></a>
+                        <a class="nav-link mx-auto" aria-current="page" href="#aboutme"><p class="text-center mb-0">About me</p></a>
+                        <a class="nav-link mx-auto" aria-current="page" href="#mystack"><p class="text-center mb-0">My stack</p></a>
+                        <a class="nav-link mx-auto" aria-current="page" href="#myproject"><p class="text-center mb-0">My projects</p></a>
+                        <a class="nav-link mx-auto btn  contactBtn d-lg-none" href="#contactme">Contact me</a>
+                    </div>
+                    <div class="col d-none d-lg-flex justify-content-lg-end">
+                        <a href="#contactme" class="btn contactBtn">Contact me</a>
+                        <!-- CZ/ENG/DE překlad -->
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="heroSection" >
+        <div class="container-fluid pt-4 pb-5">
+            <div class="row ">
+                <div class="col-12 col-md-6 d-none d-md-flex mt-5 mt-md-0">
+                    <img src="" alt="" class="photoHero mx-auto my-auto">
+                </div>                
+                <div class="col-12 col-md-6 order-1 order-md-2 my-auto">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class=" name">Robin Palatáš</h4>
+                            <h1 class="webH">I'm a web <br>
+                            <span class="devSpan">Developer</span></h1>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col ">
+                            <p>I am Robin Palatáš, a passionate web developer living in Orel. <br> 
+                                After 5 years of working as a warehouseman I choose to pursuit my IT career. <br>
+                                I was always in love with technology and cs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col cvCol">
+                            <a href="./cv/Robin_Palatáš_-_Web_Developer(2).pdf" class="btn downloadCV mt-2 mt-lg-0">
+                                Download CV(CZ)
+                            </a>
+                            <a href="./cv/CV ENG.pdf" class="btn downloadCV mt-2 mt-lg-0 ms-lg-1">
+                                Download CV(ENG)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutmeSection">
+        <div class="container py-5 " id="aboutme">
+            <div class="row">
+                <div class="col">
+                    <h2 class="text-center">About me</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <div class="col">
+                            <p>I studied computer science with economics in high school with a high school diploma. After that i started work as warehouseman in Oqema, s.r.o. Couldn't find job at IT and family needed help. <br>
+                                This work taught me independence, time managing, work under pressure and respect to all kind of people. 
+                            </p>
+                            <p>
+                                After 5 years in this job I decided that I want go back to computer science. Plan was that I will start as front end developer and with time I will try back end. 
+                                But because one project for my friend i had to jump on back-end coding sooner.
+                            </p>
+                            <p>
+                                Now i have completed some learning projects from <a href="https://www.frontendmentor.io/">frontend mentor</a> and 2 projects. <br>
+                                I am looking for any kind of collab what can help me improve my skills. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 pl-md-5">
+                    <div class="row">
+                        <div class="col">
+                            <img class="aboutmeImg mx-auto d-none d-md-flex" src="./images/hero2.jpg" alt="">
+                            <img src="" alt="" class="photoHero d-flex mx-auto d-md-none">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <p class="text-center">
+                                My hobbies are gym, traveling, camping, nature, sci-fi and fantasy literature, spending time with friends.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="stackSection">
+        <div class="container d-flex justify-content-center pt-4 pb-5" id="mystack">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row mt-4">
+                        <div class="col">
+                            <h2 class="text-center">My stack</h2>
+                            <p class="text-center">This is my stack what i am using right now or learning. How everybody knows, every day we can learn something new.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="text-center">Front end</h4>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-evenly mt-3">
+                            <div class="col-auto "><img class="stackimg" src="./imgs/basic skills.png" alt=""></div>
+                            <div class="col-auto "><img class="stackimg" src="./imgs/bootstrap.png" alt=""></div>
+                            <div class="col-auto "><img class="stackimg" src="./imgs/react.png" alt=""></div>
+                            <div class="col-auto "><img class="stackimg" src="./imgs/jquery.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="text-center">Back-end</h4>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-evenly mt-3">
+                            <div class="col-auto">
+                                <img class="stackimg" src="./imgs/nodejs.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="text-center">database</h4>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-evenly mt-3">
+                            <div class="col-auto">
+                                <img class="stackimg" src="./imgs/mongodb.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="text-center">Server hosting</h4>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-evenly mt-3">
+                            <div class="col-auto ">
+                                <img src="./imgs/netlify-logo-png-transparent.png" class="stackimg" alt="">
+                            </div>
+                            <div class="col-auto mt-2 mt-sm-0 d-flex justify-content-center"><img src="./imgs/heroku-1-logo-png-transparent.png" class="stackimg herokuimg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <h4 class="text-center">Additional tools</h4>
+                        </div>
+                        <div class="row d-flex justify-content-evenly mt-3 text-break">
+                            <div class="col-auto "><img class="stackimg" src="./imgs/git.png" alt=""></div>
+                            <div class="col-auto mt-2 mt-sm-0"><img class="stackimg" src="./imgs/sass.png" alt=""></div>
+                            <div class="col-auto mt-2 mt-sm-0"><img class="stackimg github" src="./imgs/github.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projectsSection">
+        <div class="container" id="myproject">
+            <div class="row my-3 text-center mt-5">
+                <div class="col-12">
+                    <h3>My projects</h3>
+                    <p> Here you can see my screenshots of my projects with link and link to <a href="https://github.com/Stovakx" class="linkGithub">github</a>.</p>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="row ">
+                        <div class="col">
+                            <h4 class="projectHeadings"><a href="http://kramnapohodu.cz/">Kram na pohodu</a></h4>
+                            <p>So this website was my first website after 5 years of break.<br>
+                                Rewriting css is in progress.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col">
+                            <div class="col">
+                                <img src="./images/Snímek obrazovky 2023-07-27 151729.png" class="projectimg" alt="kramnapohodu"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="projectHeadings"><a href="https://www.photorybensky.cz/">Photo Rybenský</a></h4>
+                            <p>My first full stack app. It is photography portfolio where owner can add photos to website, connect to gallery and and the photos will load on the page.<br>
+                                Next step is creating own galleries and special page for galleries with slideshow for each gallery. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <img src="./images/rybenskyphoto.png" class="projectimg" alt="photorybensky">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mt-3">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="projectHeadings"><a href="">Cimiel.cz</a></h4>
+                            <p>
+                                Curently working on this project for my friend. <br>
+                                They install electricity. <br>
+                                I am waiting for final design and for images for galleries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contactFormSection pt-4">
+        <div class="container" id="contactme">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Contact me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">
+                        If you have any question or work you can contact me with this contact form. <br>
+                        <strong>Form curently doesn't work. Contact me on email: <span class="email">Robin.Palatas@gmail.com</span>.</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row formDiv mx-auto">
+                        <form action="/sendmail" method="post" class="contactForm" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">Jméno</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" value="Mark" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Příjmení</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" value="Otto" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Prosím zadejte platnou e-mailovou adresu.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telephone" class="form-label">Tel.:</label>
+                                    <input type="text" inputmode="numeric" class="form-control" id="telephone" name="telephone" required>
+                                    <div class="invalid-feedback">
+                                        Prosím zadejte svoje telefonní číslo správně.
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="col">
+                                    <label for="message" class="form-label">Vaše zpráva</label>
+                                    <textarea class="form-control formTextArea" aria-label="message" id="message" name="message" required></textarea>
+                                </div>
+                            <div class="row  my-3 me-2">
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <label for="invalidCheck">
+                                            <input class="form-check-input" type="checkbox" id="invalidCheck" required>
+                                            <span class="d-flex pt-1">
+                                                You are accept using your informations.
+                                            </span>
+                                        </label>
+                                    <div class="invalid-feedback">
+                                        Musíte souhlasit s podmínkami.
+                                    </div>
+                                    </div>
+                                </div>
+                                    <div class="col-12 d-flex justify-content-end mt-2 mt-md-0">
+                                        <button class="btn btn_form_submit" type="submit" value="submit" id="formBtn">Odeslat</button>
+                                    </div>
+                                </div>                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-4">
+        <div class="container-fluid pt-3">
+            <div class="row">
+                <div class="col-6 order-1 ">
+                    <div class="row">
+                        <div class="col">
+                            <button class="gdprBtnForm btn" type="button" data-bs-toggle="modal" data-bs-target="#gdprModal">
+                                GDPR
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 order-3 mt-2 ">
+                    <div class="row ">
+                        <div class="col-12 d-flex justify-content-center">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-12 d-flex justify-content-center">
+                            <p>Copyright<sup>©</sup> <span class="year"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 order-2 d-flex justify-content-end text-start">
+                    <div class="socSitesDiv">
+                        <div class="row">
+                            <div class="col ">
+                               <i class="bi bi-people-fill"> Social sites</i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://www.linkedin.com/in/robin-palat%C3%A1%C5%A1-8b28ba133/" class="socSitesA"><i class="bi bi-linkedin"> LinkedIn</i></a>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://github.com/Stovakx" class="socSitesA"><i class="bi bi-github"> Github</i></a>    
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://www.instagram.com/stovakx/" class="socSitesA"><i class="bi bi-instagram"> Instagram</i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://www.facebook.com/Stovakx/" class="socSitesA"><i class="bi bi-messenger"> Facebook</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#header" id="scrollToTopBtn" onclick="scrollToTop()" type="button"><i class="bi bi-arrow-up-circle"></i></a >
+    <!-- gdpr Modal -->
+    <div class="modal fade" id="gdprModal" tabindex="-1" aria-labelledby="gdprModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="gdprModalLabel">Processing of Personal Data</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Robin Palatáš will process your personal data in accordance with the 
+                        Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection 
+                        of natural persons with regard to the processing of personal data and on the free movement of such data, 
+                        and repealing Directive 95/46/EC (General Data Protection Regulation) - hereinafter referred to as the 
+                        <strong>"Regulation"</strong>.
+                    </p>
+                    <p>Robin Palatáš will process your personal data that will be provided to him, specifically:</p>
+                    <ul>
+                        <li><strong>Identification data (name, surname)</strong></li>
+                        <li><strong>Contact details (email, phone number)</strong></li>
+                    </ul>
+                    <p class="mt-2">Robin Palatáš will process your personal data <strong>for the purpose of contacting you regarding 
+                        the services you have requested</strong>.
+                    </p>
+                    <p><strong>Controller</strong> of your personal data will be <strong>Robin Palatáš</strong>.</p>
+                    <p>Address: Orel 80, 538 21 Slatiňany</p>
+                    <p>Phone: +420 776 468 016</p>
+                    <p>Email: <span class="email">Robin.Palatas@gmail.com</span></p>
+                    <p><strong>If you have any questions about the protection of personal data, please contact us directly at the email address:</strong>
+                        <span class="email">Robin.Palatas@gmail.com</span>
+                    </p>
+                    <p>The recipient of your personal data will be Robin Palatáš.</p>
+                    <p>In relation to the processing of your personal data, we would like to inform you about the following rights:</p>
+                </div>
+                <div class="accordion accordion-flush" id="gdpracordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gdpraco1" aria-expanded="false" aria-controls="gdpraco1">
+                                <strong>1) Right to request access to your personal data</strong>
+                            </button>
+                        </h2>
+                        <div id="gdpraco1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#gdpracordion">
+                            <div class="accordion-body">
+                                <p class="gdprP">
+                                    This is your right to request information (confirmation) based on your request whether your personal data is being processed or not. If your personal data is being processed, you have the right to access this data, and you also have the right to obtain the following information:
+                                </p>
+                                <ul class="gdprul">
+                                    <li class="">Purposes of the processing</li>
+                                    <li class="">Categories of the personal data concerned</li>
+                                    <li class="">Recipients or categories of recipients to whom your personal data have been or will be disclosed, in particular recipients in third countries or international organizations</li>
+                                    <li class="">Planned period for which your personal data will be stored, or if not possible to determine, the criteria used to determine this period</li>
+                                    <li class="">Existence of the right to request rectification or erasure of your personal data or restriction of their processing, and the right to object to such processing</li>
+                                    <li class="">Right to lodge a complaint with the supervisory authority, specifically the Office for Personal Data Protection at Pplk. Sochora 27, 170 00 Prague 7, official website: <span class="www">https://www.uoou.cz</span></li>
+                                    <li class="">All available information about the source of personal data, if it was not obtained from you</li>
+                                    <li class="">The fact that automated decision-making, including profiling, as referred to in Article 22(1) and (4) of the Regulation, takes place, and meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for you.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gdpraco2" aria-expanded="false" aria-controls="gdpraco2">
+                                <strong>2) Right to request rectification of your personal data</strong>
+                            </button>
+                        </h2>
+                        <div id="gdpraco2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#gdpracordion">
+                            <div class="accordion-body">
+                                <p class="gdprP">
+                                    This is your right to have inaccurate personal data concerning you rectified without undue delay. You also have the right to have incomplete personal data completed, including by means of providing a supplementary statement.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gdpraco3" aria-expanded="false" aria-controls="gdpraco3">
+                                <strong>3) Right to request erasure of your personal data</strong>
+                            </button>
+                        </h2>
+                        <div id="gdpraco3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#gdpracordion">
+                            <div class="accordion-body">
+                                <p class="gdprP">
+                                    This is your right to request the company "Firma na zážitky, s.r.o." to erase your personal data without undue delay if one of the following reasons applies:
+                                </p>
+                                <ul class="gdprul">
+                                    <li>Your personal data are no longer necessary in relation to the purposes for which they were collected or otherwise processed</li>
+                                    <li>You withdraw consent on which the processing is based, and there is no other legal ground for the processing</li>
+                                    <li>You object to the processing pursuant to Article 21(1) of the Regulation, and there are no overriding legitimate grounds for the processing, or you object to the processing pursuant to Article 21(2) of the Regulation</li>
+                                    <li>Your personal data have been unlawfully processed</li>
+                                    <li>Your personal data have to be erased for compliance with a legal obligation in the European Union or member state law to which "Firma na zážitky, s.r.o." is subject</li>
+                                    <li>Your personal data have been collected in relation to the offer of information society services referred to in Article 8(1) of the Regulation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gdpraco4" aria-expanded="false" aria-controls="gdpraco4">
+                                <strong>4) Right to request restriction of processing of your personal data</strong>
+                            </button>
+                        </h2>
+                        <div id="gdpraco4" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#gdpracordion">
+                            <div class="accordion-body">
+                                <p class="gdprP">
+                                    This is your right to obtain the restriction of processing of your personal data in certain circumstances:
+                                </p>
+                                <ul class="gdprul">
+                                    <li>If you contest the accuracy of your personal data, processing will be restricted for a period enabling the controller to verify the accuracy of the personal data</li>
+                                    <li>If the processing is unlawful, and you oppose the erasure of your personal data and request the restriction of their use instead</li>
+                                    <li>If the controller no longer needs your personal data for the purposes of the processing, but you require them for the establishment, exercise, or defense of legal claims</li>
+                                    <li>If you have objected to processing pursuant to Article 21(1) of the Regulation pending the verification of whether the legitimate grounds of the controller override yours</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gdpraco5" aria-expanded="false" aria-controls="gdpraco5">
+                                <strong>5) Right to data portability</strong>
+                            </button>
+                        </h2>
+                        <div id="gdpraco5" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#gdpracordion">
+                            <div class="accordion-body">
+                                <p class="gdprP">
+                                    This is your right to receive the personal data concerning you which you have provided to "Firma na zážitky, s.r.o." in a structured, commonly used, and machine-readable format, and have the right to transmit those data to another controller without hindrance, where:
+                                </p>
+                                <ul class="gdprul">
+                                    <li>The processing is based on consent pursuant to Article 6(1)(a) or Article 9(2)(a) of the Regulation or on a contract pursuant to Article 6(1)(b) of the Regulation</li>
+                                    <li>The processing is carried out by automated means</li>
+                                </ul>
+                                <p class="gdprP">
+                                    When exercising your right to data portability, you have the right to have the personal data transmitted directly from "Firma na zážitky, s.r.o." to another controller, where technically feasible.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gdpraco6" aria-expanded="false" aria-controls="gdpraco6">
+                                <strong>6) Right to object</strong>
+                            </button>
+                        </h2>
+                        <div id="gdpraco6" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#gdpracordion">
+                            <div class="accordion-body">
+                                <p class="gdprP">
+                                    This is your right to object, on grounds relating to your particular situation, at any time to processing of your personal data which is based on the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller, or on the grounds of legitimate interests pursued by the controller or a third party.
+                                </p>
+                                <p class="gdprP">
+                                    If you object to the processing of your personal data, your data will no longer be processed, unless the controller demonstrates compelling legitimate grounds for the processing which override your interests, rights, and freedoms, or for the establishment, exercise, or defense of legal claims.
+                                </p>
+                                <p class="gdprP">
+                                    You can also object to the processing of your personal data for direct marketing purposes or profiling. If you object to such processing for direct marketing purposes, your personal data will no longer be processed for these purposes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gdpraco7" aria-expanded="false" aria-controls="gdpraco7">
+                                <strong>7) Right to lodge a complaint</strong>
+                            </button>
+                        </h2>
+                        <div id="gdpraco7" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#gdpracordion">
+                            <div class="accordion-body">
+                                <p class="gdprP">
+                                    You have the right to lodge a complaint with a supervisory authority, specifically the Office for Personal Data Protection, at Pplk. Sochora 27, 170 00 Prague 7, official website: <strong>https://www.uoou.cz</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./javascript/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
